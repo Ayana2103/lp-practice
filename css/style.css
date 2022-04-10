@@ -7,14 +7,14 @@
 }
 
 
-.skils{
+.skills-header{
   background-color: #fff;
 }
 .main-nav{
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content:space-between;
 }
 .fa-3x{
   color: #777;
@@ -38,7 +38,7 @@
 
 .keyvisual{
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-image:url(../img/keyvisual/keyvisual.jpg)
 }
@@ -60,17 +60,16 @@
 
 .work{
   background-color: #e3f2fd;
+  padding-top: 50pX;
 }
 .work-inner{
   display: flex;
   justify-content:space-around;
 }
 .pc{
-  margin-top: 50px;
   width: 250px;
 }
 .work-art{
-  margin-top: 50px;
   text-align:center;
   max-width: 660px;
 }
@@ -86,6 +85,9 @@
 }
 
 
+.skills{
+  background-color: #fff;
+}
 .skills-inner{
   background-color: #fff;
   padding: 50px 0 70px 0;
