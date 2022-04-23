@@ -106,9 +106,12 @@
   justify-content:center;
   align-items:center;
 }
+.pics img {
+  width: 100%;
+}
 .pic{
   margin: 0 100px 100px 0;
-  width: calc(33.3333333% -100px/3);
+  width: calc(100% / 3 - 100px);
   opacity: 0.7;
 }
 .pic:hover{
@@ -116,6 +119,9 @@
 }
 .pic:nth-child(3n){
   margin-right: 0;
+}
+.pic:nth-child(4), .pic:nth-child(5), .pic:nth-child(6){
+  margin-bottom: 0;
 }
 
 
