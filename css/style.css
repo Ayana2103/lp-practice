@@ -10,6 +10,7 @@
 .skills-header{
   background-color: #fff;
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 .main-nav{
@@ -40,14 +41,14 @@
 
 .keyvisual{
   padding-top: 78px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image:url(../img/keyvisual/keyvisual.jpg)
 }
 .keyvisual-inner{
   text-align: center;
   padding: 400px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image:url(../img/keyvisual/keyvisual.jpg)
 }
 .main-title{
   font-size: 65px;
@@ -60,6 +61,7 @@
   font-weight: 700;
   color: #ffffff;
 }
+
 
 .work{
   background-color: #e3f2fd;
@@ -103,6 +105,7 @@
 }
 .pics{
   display: flex;
+  gap: 100px;
   flex-wrap: wrap;
   justify-content:center;
   list-style: none;
@@ -111,20 +114,14 @@
   width: 100%;
 }
 .pic{
-  margin: 100px 100px 0 0;
-  width: calc(100% / 3 - 100px);
+  width: 300px;
+  height: 300px;
   opacity: 0.7;
   transition: 0.7s;
 }
 .pic:hover{
   opacity: 1.0;
   transition: 0.7s;
-}
-.pic:nth-child(3n){
-  margin-right: 0;
-}
-.pic:nth-child(1), .pic:nth-child(2), .pic:nth-child(3){
-  margin-top: 0;
 }
 
 
