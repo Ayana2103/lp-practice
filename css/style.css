@@ -5,7 +5,21 @@
   max-width: 100%;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 1199px) {
+  .inner{
+    width: 97%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .inner{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner{
+    width: 97%;
+  }
+}
 
 .skills-header{
   background-color: #fff;
@@ -29,6 +43,9 @@
   font-size: 12px;
   padding: 12px 14px;
 }
+.hamburger{
+  display: none;
+}
 .main-nav a:link, a:visited {
   color: #ffffff;
   text-decoration: none;
@@ -36,6 +53,41 @@
 .contact-btn a:hover{
   color: #333;
   transition: all 3s;
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and  (max-width: 1100px){
+
+}
+@media screen and (max-width: 767px) {
+  .contact-btn{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    position: relative;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+  .icon span{
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: #777;
+    border-radius: 8px;
+  }
+  .icon span:nth-of-type(1){
+    top: 16px;
+  }
+  .icon span:nth-of-type(2){
+    top: 28px;
+  }
+  .icon span:nth-of-type(3){
+    bottom: 16px;
+  }
 }
 
 
@@ -61,6 +113,23 @@
   font-weight: 700;
   color: #ffffff;
 }
+@media screen and (max-width: 1199px) {
+  .keyvisual-inner{
+    padding: 250px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .keyvisual-inner{
+    padding: 200px 0;
+  }
+  .main-title{
+    font-size: 40px;
+  }
+  .sub-title{
+    font-size: 30px;
+  }
+}
+
 
 
 .work{
@@ -88,6 +157,33 @@
   line-height: 18px;
   word-break: break-all;
 }
+@media screen and (max-width: 1199px) {
+  .work{
+    padding-bottom: 50pX;
+  }
+  .work-inner{
+    display: block;
+    text-align: center;
+  }
+  .pc{
+    width: none;
+  }
+  .work-art{
+    max-width: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work-inner{
+    display:block;
+    text-align: center;
+  }
+  .pc{
+    max-width: none;
+  }
+  .work-art{
+    max-width: none;
+  }
+}
 
 
 .skills{
@@ -112,6 +208,7 @@
 }
 .pics img {
   width: 100%;
+  height: 100%;
 }
 .pic{
   width: 300px;
@@ -122,6 +219,30 @@
 .pic:hover{
   opacity: 1.0;
   transition: 0.7s;
+}
+@media screen and (max-width: 1199px) {
+  .pics{
+    display: block;
+    gap: unset;
+  }
+  .pic{
+    margin: 0 auto;
+  }
+  .pic:nth-child(3n){
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pics{
+    display: block;
+    gap: unset;
+  }
+  .pic{
+    margin: 0 auto;
+  }
+  .pic:nth-child(3n){
+    margin-bottom: 100px;
+  }
 }
 
 
@@ -160,6 +281,15 @@ table tr{
 table tr:nth-child(odd){
   background-color: #e0efff;
 }
+@media screen and (max-width: 767px) {
+  table th{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  table td{
+    font-size: 12px;
+  }
+}
 
 
 .sns{
@@ -183,6 +313,18 @@ table tr:nth-child(odd){
 .sns-nav div:hover{
   background-color: #fff;
   transition: 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .sns{
+    padding: 50px 15px;
+  }
+  .sns-nav{
+    display: block;
+  }
+  .sns-nav div{
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 
 
